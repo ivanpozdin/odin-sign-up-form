@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Registration</title>
+  </head>
+  <body>
+    <nav class="header">
+      <img id="logo" src="./imgs/logo.svg" alt="Company logo" />
+      <a href="#">about our school</a>
+      <a href="#">design courses</a>
+    </nav>
+    <div class="registration-title-container">
+      <button class="back-button">
+        <img src="./imgs/back.svg" alt="Back arrow" />
+      </button>
+      <h1>Registration for the webinar</h1>
+      <div class="empty-conainer"></div>
+    </div>
+    <form action="">
+      <h1>
+        <em>Hi!</em> we will be glad to see you on May 11 at 6 pm at our webinar
+      </h1>
+      <div class="all-inputs-container">
+        <div class="inputs">
+          <label class="hidden-label" for="user_name">Name</label>
+          <label class="hidden-label" for="user_email">Email</label>
+          <div>
+            <input
+              type="text"
+              id="user_name"
+              placeholder="name*"
+              pattern="^[a-zA-Z]+$"
+              required
+            />
+            <p>please use only letters</p>
+          </div>
+          <div>
+            <input type="email" id="user_email" placeholder="email*" required />
+            <p>enter the correct email address</p>
+          </div>
+          <input id="phone" type="tel" placeholder="+7 (___)___-__-__" />
+          <label class="hidden-label" for="phone">Phone</label>
+        </div>
+        <div class="checkboxes">
+          <label for="privacy_policy"
+            ><input type="checkbox" id="privacy_policy" required />i agree to
+            the privacy Policy*</label
+          >
+
+          <label for="receive_emails"
+            ><input type="checkbox" id="receive_emails" />I agree to receive
+            emails from the service</label
+          >
+        </div>
+      </div>
+      <div class="btn-container">
+        <button type="submit">sign up</button>
+        <div class="empty-container"></div>
+      </div>
+    </form>
+  </body>
+</html>
